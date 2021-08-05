@@ -1,0 +1,108 @@
+#skills {
+  background-color: $white-color;
+  color: $dark-blue-text;
+  margin-top: -10rem;
+  padding-top: 15rem;
+
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left !important;
+    margin-bottom: 250px;
+  }
+  @keyframes load {
+    from {
+      width: 0%;
+    }
+  }
+  @-webkit-keyframes load {
+    from {
+      width: 0%;
+    }
+  }
+  @-moz-keyframes load {
+    from {
+      width: 0%;
+    }
+  }
+  @-o-keyframes load {
+    from {
+      width: 0%;
+    }
+  }
+
+  .bar {
+    background-color: #eee;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .bar::before {
+    content: attr(data-skill);
+    background-color: #ffa600;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 5s 0s;
+    -webkit-animation: load 5s 0s;
+    -moz-animation: load 5s 0s;
+    -o-animation: load 5s 0s;
+  }
+
+  .bar.front::before {
+    background-color: #ff7c43;
+  }
+  .bar.back::before {
+    background-color: #f95d6a;
+  }
+  .bar.left::before {
+    background-color: #d45087;
+  }
+  .bar.right::before {
+    background-color: #a05195;
+  }
+  .bar.up::before {
+    background-color: #665191;
+  }
+  .bar.down::before {
+    background-color: #2f4b7c;
+  }
+  .bar.center::before {
+    background-color: #003f5c;
+  }
+
+  .bar.learning::before {
+    width: calc(20% - 10px);
+  }
+  .bar.learning1::before {
+    width: calc(30% - 10px);
+  }
+  .bar.basic::before {
+    width: calc(40% - 10px);
+  }
+  .bar.basic1::before {
+    width: calc(50% - 10px);
+  }
+  .bar.intermediate::before {
+    width: calc(60% - 10px);
+  }
+  .bar.intermediate1::before {
+    width: calc(70% - 10px);
+  }
+  .bar.advanced::before {
+    width: calc(80% - 10px);
+  }
+  .bar.advanced1::before {
+    width: calc(90% - 10px);
+  }
+  .bar.expert::before {
+    width: calc(100% - 10px);
+  }
+}

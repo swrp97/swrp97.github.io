@@ -50,32 +50,32 @@
     display: inline-block;
     padding: 5px 0 5px 10px;
     border-radius: inherit;
-    animation: load 5s 0s;
-    -webkit-animation: load 5s 0s;
-    -moz-animation: load 5s 0s;
-    -o-animation: load 5s 0s;
+    animation: load 4s 0s;
+    -webkit-animation: load 4s 0s;
+    -moz-animation: load 4s 0s;
+    -o-animation: load 4s 0s;
   }
 
   .bar.front::before {
-    background-color: #ff7c43;
+    background-color: #363538;
   }
   .bar.back::before {
-    background-color: #f95d6a;
+    background-color: #363538;
   }
   .bar.left::before {
-    background-color: #d45087;
+    background-color: #363538;
   }
   .bar.right::before {
-    background-color: #a05195;
+    background-color: #363538;
   }
   .bar.up::before {
-    background-color: #665191;
+    background-color: #363538;
   }
   .bar.down::before {
-    background-color: #2f4b7c;
+    background-color: #363538;
   }
   .bar.center::before {
-    background-color: #003f5c;
+    background-color: #363538;
   }
 
   .bar.learning::before {
